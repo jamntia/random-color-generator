@@ -1,0 +1,52 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body and html take up full height */
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.column {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.c1 {
+    background-color: #ff0000;
+    border-right: 2.5px solid #000000;
+}
+
+.c2 {
+    background-color: #00ff00;
+    border-right: 2.5px solid #000000;
+    border-left: 2.5px solid #000000;
+}
+
+.c3 {
+    background-color: #0000ff;
+    border-left: 2.5px solid #000000;
+}
+
+.button_box {
+    margin-top: 68vh; /* Pushes the button box to the bottom */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    padding: 10px;
+}
+
+button {
+    /* Adjust button styles as needed */
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+}
