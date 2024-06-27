@@ -5,7 +5,7 @@ function generateRandomColor() {
     // Accounts for CSS notation
     let result = "#"
 
-    for (let i = 0; i < 6; i++)  {
+    for (let i = 0; i < 6; i++) {
         // Find a random number between 0 and 15 (length of characters)
         const randomIndex = Math.floor(Math.random() * 16)
 
