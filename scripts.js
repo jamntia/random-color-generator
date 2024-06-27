@@ -33,6 +33,7 @@ function copyHexCode(selector) {
     }
 }
 
+
 // Function to display copied message near the hex code
 function showCopiedMessage(element) {
     const messageElement = document.createElement('span');
@@ -51,6 +52,9 @@ function showCopiedMessage(element) {
 function changeBackgroundColor(selector) {
     const element = document.querySelector(selector);
     if (element) {
+        // Remove initial border class if it exists
+        element.querySelector('.change-btn').classList.remove('initial-border');
+
         // Generate a new color
         const newColor = generateRandomColor();
 
@@ -70,6 +74,7 @@ function changeBackgroundColor(selector) {
         }
     }
 }
+
 
 // Function to toggle the lock state
 function toggleLock(selector) {
